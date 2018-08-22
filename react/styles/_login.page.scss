@@ -1,0 +1,99 @@
+.login-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-page__box {
+  position: relative;
+  width: 70%;
+  max-width: 20rem;
+  background-color: $accent-color-4;
+  padding: 3.2rem 1.5rem 2rem;
+}
+
+.login-page__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  background-color: $accent-color-2;
+}
+
+.login-page__logo-icon {
+  font-size: 2.4rem;
+  color: $accent-color-5;
+}
+
+.login-page__error {
+  color: $accent-color-1;
+  text-align: center;
+  min-height: 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-top: .5rem;
+}
+
+.login-page__error-icon {
+  margin-right: .3rem;
+}
+
+.login-page__inputs {
+  margin: 2rem 0 2.5rem 0;
+}
+
+.login-page__input {
+  margin-top: 2rem;
+
+  input {
+    font-size: 1rem;
+  }
+}
+
+.login-page__password-remind {
+  font-size: .6rem;
+  text-align: right;
+  color: $accent-color-1;
+  margin-top: .3rem;
+  text-decoration: underline;
+}
+
+.login-page__submit {
+  font-size: 1rem;
+  background-color: $accent-color-1;
+  color: $accent-color-5;
+  width: 100%;
+  height: 2.3rem;
+  transition: opacity .25s ease-out;
+
+  &:disabled {
+    opacity: .4;
+    cursor: default;
+  }
+}
+
+.login-page__register-title {
+  font-size: .6rem;
+  text-align: center;
+  margin-top: 2.2rem;
+  color: $grey;
+}
+
+.login-page__register-link {
+  font-size: .6rem;
+  text-align: center;
+  margin-top: .3rem;
+  color: $accent-color-1;
+  text-decoration: underline;
+}
+
+@include media-breakpoint-up(md) {
+  .login-page {
+    background-image: url('../images/bg-desktop.jpeg');
+  }
+}

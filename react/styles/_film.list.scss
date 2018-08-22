@@ -1,0 +1,21 @@
+.film-list {
+  margin-bottom: 5rem;
+
+  .film-list__lack-of-results {
+    text-align: center;
+    color: $grey;
+  }
+}
+
+
+.film-list__loading {
+  height: 80vh;
+  font-size: 2rem;
+  color: $accent-color-2;
+}
+
+@include media-breakpoint-up(sm) {
+  .film-list {
+    margin-bottom: 0;
+  }
+}

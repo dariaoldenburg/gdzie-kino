@@ -1,0 +1,39 @@
+.header-mobile {
+  width: 100vw;
+  height: 3.1rem;
+  background-color: $accent-color-1;
+  box-shadow: 0 3px 5px rgba(100, 100, 100, 0.49);
+  z-index: $z-index-header;
+  font-size: 1.4rem;
+  color: $accent-color-5;
+}
+
+.header-mobile__logo-box {
+  padding-left: 1rem;
+}
+
+.header-mobile__logo-title {
+  padding-left: .8rem;
+  font-size: 1.4rem;
+}
+
+.header-mobile__search-box {
+  margin-left: auto;
+  width: 2rem;
+  margin: 0 0 0 auto;
+}
+
+.header-mobile__filter-box {
+  margin: 0 1rem;
+}
+
+.header-mobile__filter-icon-big {
+  font-size: 2rem;
+}
+
+.header-mobile__search-input-container {
+  position: absolute;
+  width: calc(100vw - 2.8rem);
+  height: 2.4rem;
+  left: .3rem;
+}

@@ -1,0 +1,31 @@
+.favorites-list {
+  margin-bottom: 5rem;
+}
+
+.favorites-list__title {
+  font-size: 1.35rem;
+  text-align: center;
+  color: $grey-light;
+  padding-top: 1rem;
+}
+
+.favorites-list__title-icon {
+  font-size: 1.2rem;
+}
+
+.favorites-list__lack-of-results {
+  text-align: center;
+  color: $grey;
+}
+
+.favorites-list__loading {
+  height: 80vh;
+  font-size: 2rem;
+  color: $accent-color-2;
+}
+
+@include media-breakpoint-up(sm) {
+  .favorites-list {
+    margin-bottom: 0;
+  }
+}

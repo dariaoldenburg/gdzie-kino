@@ -1,0 +1,134 @@
+.film-details {
+  padding: 1.6rem 1rem 1.7rem 1rem;
+  background-color: $accent-color-5;
+
+  .film-details__poster-and-desc {
+    min-height: 131px;
+    margin-bottom: 1rem;
+
+    .film-details__poster-box {
+      width: 131px;
+      height: 202px;
+      background-size: cover;
+      background-position: center;
+      margin-right: 1.3rem;
+    }
+
+    .film-details__description-box {
+      color: $grey;
+      width: 12rem;
+      
+      .film-details__title {
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin: 0;
+        margin-bottom: .4rem;
+      }
+      .film-details__genre {
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: .7rem;
+      }
+
+      .film-details__duration-icon {
+        font-size: .8rem;
+        margin: 0;
+        margin-bottom: .8rem;
+      }
+
+      .film-details__duration {
+        font-size: .8rem;
+        margin: 0;
+        margin-left: 5px;
+        margin-top: -2px;
+        margin-bottom: .8rem;
+      }
+
+      .film-details__description {
+        margin: 0;
+        font-size: .8rem;
+      }
+
+      .film-details__description--dots {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+      }
+
+      .film-details__toggle-desc-btn {
+        outline: 0;
+        width: 100%;
+        display: block;
+        border: none;
+        background-color: $accent-color-5;
+        padding: 10px;
+        text-align: right;
+        color: $grey;
+        font-size: .8rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .film-details__rating-and-like {
+    height: 2rem;
+    position: relative;
+
+    .film-details__rating-icon {
+      color: $accent-color-3;
+      font-size: 1.2rem;
+      margin: 6px 5px 6px 0;
+    }
+
+    .film-details__rating {
+      color: $grey;
+      font-size: 1.2rem;
+      margin: 0;
+      margin: 5px 0;
+    }
+
+    .film-details__thumbs {
+      position: absolute;
+      right: 0;
+
+      .film-details__watched-question {
+        font-size: .9rem;
+        margin: .5rem .7rem .5rem 0;
+      }
+
+      .film-details__thumb-box {
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid $grey;
+        border-radius: 100%;
+        box-sizing: border-box;
+
+        .film-details__thumb {
+          font-size: 1rem;
+          color: $grey;
+        }
+
+        .like {
+          margin: .3rem .4rem; 
+        }
+
+        .dislike {
+          margin: .4rem .5rem; 
+        }
+      }
+
+      .like-box {
+        margin-right: .6rem;
+      }
+
+      .film-details__thumb-box-selected {
+        border: 2px solid $accent-color-2;
+
+        .film-details__thumb {
+          color: $accent-color-2;
+        }
+      }
+    }
+  }
+}

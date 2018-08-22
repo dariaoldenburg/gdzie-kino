@@ -1,0 +1,79 @@
+.material-input {
+  position: relative;
+  border: 1px solid transparent;
+  transition: border-color .2s linear;
+}
+
+.material-input--invalid {
+  border-color: $accent-color-1;
+}
+
+.material-input__input {
+  border: none;
+  box-sizing: border-box;
+  padding: .6rem .6rem .6rem .3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  width: 100%;
+  color: $grey;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:focus ~ .material-input__label, &:valid ~ .material-input__label {
+    transform: translate(0, -2.2rem);
+    font-size: .95rem;
+    color: $grey;
+    font-weight: 500;
+  }
+
+  &:focus ~ .material-input__border {
+    width: 100%;
+  }
+}
+
+.material-input__warning-icon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  color: red;
+  font-weight: 300;
+  opacity: 0;
+  transition: opacity .2s linear;
+  transform: translate(0, -50%);
+}
+
+.material-input__warning-icon--visible {
+  opacity: 1;
+}
+
+.material-input__label {
+  color: $grey-lighter;
+  position: absolute;
+  left: .3rem;
+  top: 50%;
+  pointer-events: none;
+  transform: translate(0, -50%);
+  transition: 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) all;
+}
+
+.material-input__border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  transform: translate(-50%, 0);
+  background-color: $accent-color-2;
+  transition: 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) all;
+}
+
+.material-input__show-password-button {
+  position: absolute;
+  right: .3rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: $accent-color-2;
+  cursor: pointer;
+}

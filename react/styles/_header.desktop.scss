@@ -1,0 +1,51 @@
+.header-desktop {
+  width: 100vw;
+  height: 4rem;
+  background-color: $accent-color-1;
+  box-shadow: 0 3px 5px rgba(100, 100, 100, 0.49);
+  z-index: $z-index-header;
+  font-size: 1.4rem;
+  color: $accent-color-5;
+}
+
+.header-desktop__wrapper {
+  max-width: $app-width;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-desktop__logo-box {
+  padding-left: 1rem;
+}
+
+.header-desktop__logo-title {
+  padding-left: .8rem;
+  font-size: 1.4rem;
+}
+
+.header-desktop__separator {
+  height: 2rem;
+  width: 1px;
+  background-color: rgba($accent-color-5, .3);
+  margin: 0 1rem;
+}
+
+.header-desktop__search-input-container {
+  max-width: 18rem;
+  margin: 0 .8rem;
+}
+
+.header-desktop__right-panel {
+  margin-left: auto;
+  width: 9rem;
+  margin-right: 1rem;
+
+  .header-desktop__separator {
+    margin: 0;
+  }
+
+  svg {
+    color: $accent-color-5;
+  }
+}
